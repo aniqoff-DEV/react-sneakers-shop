@@ -1,13 +1,14 @@
+import styles from './Drawer.module.scss';
 
 function Drawer(){
     return(
-        <div style={{display: 'none'}} className="overlay">
+        <div style={{display: 'none'}} className={styles.drawer}>
         
         <div className="drawer">
           <h2 className="mb-20 d-flex justify-between">
             Корзина <img className="remove-btn cu-p" src="/img/btn-remove.svg" alt="Close"/></h2>
 
-          <div className="items">
+          <div className={styles.items}>
             <div className="cart-item d-flex align-center mb-20">
               {/* <img className="mr-20" width={70} height={70} src="/img/sneakers/1.jpg" alt="Sneakers"/> */}
               <div style={{backgroundImage: 'url(/img/sneakers/1.jpg)'}} className="cart-item-img"/>
